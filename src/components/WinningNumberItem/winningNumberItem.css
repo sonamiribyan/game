@@ -1,0 +1,23 @@
+.winning-number-item
+{
+    width:92.33px;
+    height: 24px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    border: 1px solid #85735999;
+
+}
+.winning-number-item-text
+{
+    font-size: 16px;
+    color: #EFDFC7;
+}
+.invisible {
+    position: absolute;
+    left: -9999px;
+    visibility: hidden;
+  }
+  
