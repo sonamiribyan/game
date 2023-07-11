@@ -1,0 +1,97 @@
+.chatBox {
+    /* height: 671px; */
+    border-radius: 8px solid;
+    background-color: #113414;
+    align-self: flex-end;
+    padding: 8px;
+    width: 100%;
+}
+
+.chat-text {
+    font-size: 24px;
+    color: #EFDFC7;
+
+}
+
+.chatbox-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.messageBox {
+    flex-basis: 688px;
+    /* height: 550px; */
+    border: 1px solid #857359;
+    padding: 8px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.messageBox-bar {
+    overflow-y: scroll;
+    min-height: 50px;
+}
+
+
+.messageBox-bar::-webkit-scrollbar-track {
+    background-color: rgb(20 37 22);
+    width: 10px;
+    border: 1px solid #857359;
+    border-radius: 8px;
+}
+
+/* Customize the scrollbar thumb */
+.messageBox-bar::-webkit-scrollbar-thumb {
+    background-color: rgb(173 156 131);
+}
+
+/* Customize the scrollbar thumb on hover */
+.messageBox-bar::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Customize the scrollbar width */
+.messageBox-bar::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Customize the scrollbar height */
+.messageBox-bar::-webkit-scrollbar {
+    height: 10px
+}
+
+.chat-send-box {
+    height: 40px;
+    padding: 8px, 16px, 8px, 16px;
+    border: 1px solid #857359;
+    background-color: transparent;
+    border-radius: 8px;
+    flex-grow: 1;
+}
+
+.chat-send-box::placeholder {
+    font-size: 16px;
+    color: #EFDFC7;
+}
+
+.chat-box {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 8px;
+}
+
+.input {
+    border: none;
+}
+
+.input:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+.send-box {
+    width: 24px;
+    height: 24px;
+    align-self: center;
+    cursor: pointer;
+}
