@@ -1,0 +1,26 @@
+.login-bg{
+    border-radius: 8px;
+    background-color: #113414;
+    opacity: 90%;
+    padding: 8px;
+    width: 400px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text{
+    font-size: 24px;
+    font-family: 'Jost';
+    color: #EFDFC7;
+    padding-bottom: 10px;
+}
+.login-bg input{
+    width: 100%;
+    background-color: #142715;
+    padding: 8px 16px 8px 16px;
+    border: 1px solid #857359;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
