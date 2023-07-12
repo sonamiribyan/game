@@ -4,6 +4,8 @@ import Header from './components/Header/Header';
 import WinningBar from './components/WinningBar/WinningBar';
 import RulleteBlock from './components/RulleteBlock/RulleteBlock';
 import OnlineUsers from './components/OnlineUser/OnlineUsers';
+import Login_form from './components/Login/Login';
+
 function App() {
   return (
     <div className="App">
@@ -13,6 +15,9 @@ function App() {
           <WinningBar />
           <RulleteBlock />
           <OnlineUsers />
+        </div>
+        <div className="login">
+          <Login_form />
         </div>
       </div>
     </div>
