@@ -1,6 +1,4 @@
 .winningBar-left {
-    width: 332px;
-    height: 966px;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    display: grid;
 }

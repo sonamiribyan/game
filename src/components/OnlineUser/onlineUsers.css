@@ -6,7 +6,7 @@
 }
 
 .online-users {
-    /* height: 966px; */
+    height: fit-content;
     background-color: rgb(16 50 19);
     border-radius: 8px;
     border: 1px solid #18181899;

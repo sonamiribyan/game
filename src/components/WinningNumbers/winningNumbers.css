@@ -7,10 +7,10 @@
 
 .winning-numbers {
   max-height: 300px;
-  margin-top: 16px;
+  margin-top: 35px;
   background-color: rgb(16 50 19);
   opacity: 90%;
-  flex-grow: 1;
+  border-radius: 8px;
   padding: 16px 16px 16px 16px;
 }
 
