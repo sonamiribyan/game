@@ -5,7 +5,6 @@ function RulleteBlock() {
     return (
         <>
             <div className='rulleteBlock'>
-                asasd
                 <Chat></Chat>
             </div>
 

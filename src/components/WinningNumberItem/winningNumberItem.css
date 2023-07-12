@@ -1,6 +1,12 @@
-.winning-number-item
-{
-    width:92.33px;
+@font-face {
+    font-family: 'Jost';
+    src: url('../../fonts/Jost-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.winning-number-item {
+    width: 92.33px;
     height: 24px;
     text-align: center;
     display: inline-block;
@@ -10,14 +16,15 @@
     border: 1px solid #85735999;
 
 }
-.winning-number-item-text
-{
+
+.winning-number-item-text {
     font-size: 16px;
+    font-family: 'Jost';
     color: #EFDFC7;
 }
+
 .invisible {
     position: absolute;
     left: -9999px;
     visibility: hidden;
-  }
-  
+}
