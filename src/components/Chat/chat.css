@@ -1,20 +1,28 @@
 .chatBox {
     /* height: 671px; */
-    border-radius: 8px solid;
+    border-radius: 8px;
     background-color: #113414;
     align-self: flex-end;
     padding: 8px;
     width: 100%;
+    opacity: 90%;
 }
-
-.chat-text {
+@font-face {
+    font-family: 'Jost';
+    src: url('../../fonts/Jost-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .chat-text {
     font-size: 24px;
+    font-family: 'Jost';
     color: #EFDFC7;
-
-}
-
+  }
+      
 .chatbox-header {
     display: flex;
+    background-color: #103414;
     justify-content: space-between;
 }
 
@@ -23,6 +31,7 @@
     /* height: 550px; */
     border: 1px solid #857359;
     padding: 8px;
+    background-color:#142715;
     border-radius: 8px;
     margin-bottom: 8px;
 }
@@ -34,7 +43,7 @@
 
 
 .messageBox-bar::-webkit-scrollbar-track {
-    background-color: rgb(20 37 22);
+    background-color:#18181866;
     width: 10px;
     border: 1px solid #857359;
     border-radius: 8px;
@@ -72,10 +81,13 @@
 .chat-send-box::placeholder {
     font-size: 16px;
     color: #EFDFC7;
+    font-family: 'Jost';
 }
 
 .chat-box {
     display: flex;
+    background-color:#142715;
+
     justify-content: space-between;
     padding-right: 8px;
 }

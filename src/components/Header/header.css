@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('../../fonts/Jost-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 .header-top-left {
     display: flex;
     width: 393px;
@@ -5,6 +12,7 @@
 
 .header-top-left-text,.cross-img {
     font-size: 24px;
+    font-family: 'Jost';
     font-weight: 600;
     line-height: 32px;
     align-self: center;
@@ -16,6 +24,7 @@
 .header-top-right-text {
     color: #FD9D20;
     font-size: 24px;
+    font-family: 'Jost';
     align-self: center;
 }
 
@@ -27,6 +36,7 @@
 .header-top-left-text
 {
     font-size: 18px;
+    font-family: 'Jost';
     color: #EFDFC7;
 }
 .first

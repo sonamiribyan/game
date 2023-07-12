@@ -14,7 +14,7 @@ function Chat() {
                 </div>
                 <div className='messageBox'>
                     <div className='messageBox-bar'>
-
+        
                     </div>
                 </div>
                 <div className='chat-send-box chat-box'>
