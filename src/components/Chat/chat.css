@@ -1,11 +1,17 @@
 .chatBox {
-    /* height: 671px; */
     border-radius: 8px;
     background-color: #113414;
     align-self: flex-end;
     padding: 8px;
     width: 100%;
     opacity: 90%;
+}
+@media (min-width:1600px) {
+    .chat-box{
+        display: grid;
+        grid-template-rows: 0fr 6fr 1fr;
+        height: 62%;
+    }
 }
 @font-face {
     font-family: 'Jost';
