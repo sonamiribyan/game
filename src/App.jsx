@@ -1,24 +1,22 @@
 
 import './App.css';
+import React, { useContext } from 'react';
 import Header from './components/Header/Header';
-import WinningBar from './components/WinningBar/WinningBar';
-import RulleteBlock from './components/RulleteBlock/RulleteBlock';
-import OnlineUsers from './components/OnlineUser/OnlineUsers';
+import Home from './components/Home/Home';
 import Login_form from './components/Login/Login';
+import { AuthContext } from './context/AuthContext';
+
 
 function App() {
+  const {isLoggedIn } = useContext(AuthContext);
+  console.log(isLoggedIn);
   return (
     <div className="App">
       <div className='wrapper'>
         <Header />
-        <div className='main'>
-          <WinningBar />
-          <RulleteBlock />
-          <OnlineUsers />
-        </div>
-        <div className="login">
-          <Login_form />
-        </div>
+        {
+          isLoggedIn ? <Home /> : <Login_form />
+        }
       </div>
     </div>
   );

@@ -25,14 +25,3 @@ body {
   color: #61dafb;
 }
 
-.main {
-  padding-top: 16px;
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-}
-@media (min-width: 1600px) {
-  .main{
-    bottom: 0;
-    height: 89%;
-  }
-}
