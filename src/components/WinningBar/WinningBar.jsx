@@ -10,7 +10,7 @@ function WinningBar() {
         <img src={winningImage} alt="" />
         <WinningNumbers></WinningNumbers>
       </div>
-      
+
     </>
   );
 }
