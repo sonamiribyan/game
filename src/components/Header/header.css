@@ -3,14 +3,15 @@
     src: url('../../fonts/Jost-VariableFont_wght.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 .header-top-left {
     display: flex;
     width: 393px;
 }
 
-.header-top-left-text,.cross-img {
+.header-top-left-text,
+.cross-img {
     font-size: 24px;
     font-family: 'Jost';
     font-weight: 600;
@@ -28,18 +29,25 @@
     align-self: center;
 }
 
-.header-top,.header-bottom
-{
+.header-top,
+.header-bottom {
     display: flex;
     justify-content: space-between;
 }
-.header-top-left-text
-{
+
+.header-top-left-text,
+.logout {
     font-size: 18px;
     font-family: 'Jost';
     color: #EFDFC7;
 }
-.first
-{
+
+.logout {
+    margin-right: 20px;
+    align-self: center;
+    cursor: pointer;
+}
+
+.first {
     padding-left: 55px;
 }

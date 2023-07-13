@@ -1,11 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './header.css'
 import cross from '../../images/cross.png'
 import crossButton from '../../images/crossButton.png'
 import icon from '../../images/voice.png'
 import voice from '../../images/icon.png'
+import { AuthContext } from '../../context/AuthContext';
+function Header({ isLoggedIn }) {
+  const { logout } = useContext(AuthContext);
 
-function Header() {
+  const handleLogout = () => {
+    logout();
+  };
   return (
     <header>
       <div className='header-top'>
@@ -23,6 +28,8 @@ function Header() {
           </div>
         </div>
         <div className='header-top-right'>
+          {isLoggedIn && <span className='logout' onClick={handleLogout}>Logout</span>}
+
           <img src={crossButton} alt="" />
           <img src={voice} alt="" />
           <img src={icon} alt="" />
