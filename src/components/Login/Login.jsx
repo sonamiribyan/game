@@ -1,19 +1,27 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import './login.css';
 import { AuthContext } from '../../context/AuthContext';
 const Login_form = () => {
     const { login, error } = useContext(AuthContext);
-    const [password, setPassword] = useState('');
+    const [token, setToken] = useState('');
+    const [isSubmitting, setIsSubmitting] = useState(false); // New state variable
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (password.trim()) {
-            login(password);
+        if (token.trim() && !isSubmitting) {
+            setIsSubmitting(true);
+            login(token);
         }
         // Call the login function and pass the password value
     };
+    useEffect(() => {
+        if (error) {
+            setIsSubmitting(false); // Reset isSubmitting if an error occurs during login
+        }
+    }, [error]);
 
     const handleInputChange = (e) => {
-        setPassword(e.target.value);
+        setToken(e.target.value);
     };
     return (
         <div className="login">
@@ -21,8 +29,8 @@ const Login_form = () => {
                 <p className="text">Login</p>
                 <form onSubmit={handleSubmit}>
                     <input type="password"
-                        placeholder="Write Your Password"
-                        value={password}
+                        placeholder="Write Your token"
+                        value={token}
                         onChange={handleInputChange}
                     />
                     {error && <p className="error-message">{error}</p>}
