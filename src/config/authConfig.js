@@ -1,6 +1,6 @@
 import axios from 'axios';
 const authConfig = axios.create({
-  baseURL: 'http://192.168.31.33:4000/api/v1/diller', // Replace with your API base URL
+  baseURL: 'http://192.168.31.32:4000/api/v1/diller/', // Replace with your API base URL
   // Add other authentication-related configuration variables
 });
 
@@ -23,8 +23,9 @@ authConfig.interceptors.response.use(
   },
   (error) => {
     if (error.response && error.response.status === 401) {
-      console.log('not autorizated');
-
+      localStorage.removeItem('access_token');
+      localStorage.removeItem('refresh_token');
+      window.location.pathname = '/';
     }
     return Promise.reject(error);
   }
