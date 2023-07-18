@@ -1,9 +1,9 @@
-import './App.css';
 import React, { useContext, useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import './App.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
 import Login_form from './components/Login/Login';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Loader from './components/Loader/Loader';
 
 function App() {
@@ -16,16 +16,20 @@ function App() {
       setIsLoggedIn(true);
     }
     setIsLoading(false);
+
+
   }, []);
+  
+ 
 
   if (isLoading) {
-    // You can render a loading indicator while checking the authentication status
     return <Loader />;
   }
 
   return (
     <div className="App">
       <div className="wrapper">
+
         <Header isLoggedIn={isLoggedIn} />
         <Router>
           <Routes>
@@ -44,5 +48,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
