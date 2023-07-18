@@ -1,8 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './winningNumbers.css'
 import WinningNumberItem from '../WinningNumberItem/WinningNumberItem';
+import socket from '../../config/socket';
 
 function WinningNumbers() {
+
+    const [game, setGame] = useState([]);
+
+    const handleSendGame = (gameData) => {
+        console.log(gameData);
+        // setGame([...game,gameData]);
+        // console.log(game);
+    };
+    socket.on('sendGame', handleSendGame);
+
+    useEffect(() => {
+        return () => {
+            socket.off('sendGame', handleSendGame);
+        };
+    }, []);
+
+    // useEffect(() => {
+    //     console.log('Updated game:', game);
+    // }, [game]);
+
+
     return (
         <div className='winning-numbers'>
             <div className='winning-numbers-container'>
