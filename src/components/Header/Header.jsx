@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import './header.css'
 import cross from '../../images/cross.png'
 import crossButton from '../../images/crossButton.png'
@@ -6,7 +6,12 @@ import icon from '../../images/voice.png'
 import voice from '../../images/icon.png'
 import { AuthContext } from '../../context/AuthContext';
 function Header({ isLoggedIn }) {
-  const { logout } = useContext(AuthContext);
+  const { logout,user } = useContext(AuthContext);
+
+
+  // useEffect(() => {
+  //   console.log(user);
+  // }, []);
 
   const handleLogout = () => {
     logout();

@@ -3,10 +3,16 @@
   /* height: 966px; */
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   margin-right: 16px;
   margin-left: 16px;
   flex-shrink: 2;
+}
 
+.gameStateContainer {
+  width: 376px;
+  height: 239px;
+  min-height: 239px;
+  margin: 0 auto;
 
 }
