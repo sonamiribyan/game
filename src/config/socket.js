@@ -1,5 +1,13 @@
+// socket.js
 import io from 'socket.io-client';
 
-const socket = io('http://192.168.31.32:5000'); // Replace with your server URL
+let socketInstance = null;
 
-export default socket;
+export const createSocketConnection = () => {
+    if (!socketInstance) {
+        socketInstance = io.connect('http://192.168.31.32:5000');
+    }
+    return socketInstance;
+};
+
+

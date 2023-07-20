@@ -5,6 +5,7 @@ import Send from '../../images/Send.png';
 function Chat() {
     return (
         <>
+        {/* <p>dsdsds</p> */}
             <div className='chatBox'>
                 <div className='chatbox-header'>
                     <p className='chat-text'>Chat</p>
