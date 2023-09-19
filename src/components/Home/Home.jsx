@@ -43,7 +43,7 @@ function Home() {
             win_number: `${win_number}`,
             warning_flag: obj.warning_flag[warning_flag],
             rotor_speed: `Rotor ${Number(rotor_speed) / 10.0} RPM`,
-            rotor_direction: obj.rotor_direction[rotor_direction]
+            rotor_direction: obj.rotor_direction[+(rotor_direction)]
         };
         setformattedObject(formattedObject2);
     };

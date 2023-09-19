@@ -36,7 +36,7 @@ const Login_form = () => {
 
     return (
         <div className="login">
-            <div className="login-bg" style={{opacity:0}}>
+                <div className="login-bg" style={{opacity:0}}>
                 <p className="text">Login</p>
                 <form onSubmit={handleSubmit}>
                     <input type="password"

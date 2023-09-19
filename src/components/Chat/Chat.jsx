@@ -5,7 +5,7 @@ import Send from '../../images/Send.png';
 function Chat() {
     return (
         <>
-        {/* <p>dsdsds</p> */}
+            {/* <p>dsdsds</p> */}
             <div className='chatBox'>
                 <div className='chatbox-header'>
                     <p className='chat-text'>Chat</p>
@@ -19,8 +19,7 @@ function Chat() {
                     </div>
                 </div>
                 <div className='chat-send-box chat-box'>
-                    <input className='chat-send-box input' placeholder='  Click to chat'>
-
+                    <input className='chat-send-box input' placeholder=' Click to chat'>
                     </input>
                     <img src={Send} alt="" className='send-box' />
                 </div>

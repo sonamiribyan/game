@@ -20,6 +20,7 @@ export const AuthProvider = ({ children }) => {
             const response = await authConfig.post('/login', {
                 "token": token
             });
+            console.log(response);
             if (response.status === 200) {
                 handleLoginSuccess(response);
             }

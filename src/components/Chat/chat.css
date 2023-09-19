@@ -4,28 +4,33 @@
     align-self: flex-end;
     padding: 8px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     opacity: 90%;
+    height: 100%;
 }
+
 @media (min-width:1600px) {
-    .chat-box{
+    .chatBox {
         display: grid;
-        grid-template-rows: 0fr 6fr 1fr;
+        grid-template-rows: 0fr 9fr 1fr;
         height: 62%;
     }
 }
+
 @font-face {
     font-family: 'Jost';
     src: url('../../fonts/Jost-VariableFont_wght.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .chat-text {
+}
+
+.chat-text {
     font-size: 24px;
     font-family: 'Jost';
     color: #EFDFC7;
-  }
-      
+}
+
 .chatbox-header {
     display: flex;
     background-color: #103414;
@@ -33,11 +38,10 @@
 }
 
 .messageBox {
-    flex-basis: 688px;
-    /* height: 550px; */
+    flex-grow: 1;
     border: 1px solid #857359;
     padding: 8px;
-    background-color:#142715;
+    background-color: #142715;
     border-radius: 8px;
     margin-bottom: 8px;
 }
@@ -49,7 +53,7 @@
 
 
 .messageBox-bar::-webkit-scrollbar-track {
-    background-color:#18181866;
+    background-color: #18181866;
     width: 10px;
     border: 1px solid #857359;
     border-radius: 8px;
@@ -92,8 +96,8 @@
 
 .chat-box {
     display: flex;
-    background-color:#142715;
-
+    background-color: #142715;
+    flex-grow:0;
     justify-content: space-between;
     padding-right: 8px;
 }
