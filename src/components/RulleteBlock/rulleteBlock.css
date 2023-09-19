@@ -13,6 +13,56 @@
   width: 376px;
   height: 239px;
   min-height: 239px;
+  position: relative;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
 
+.gameStateContainer .win-number{
+  margin-left: 20px;
+}
+.gameStateContainer .win-number img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.greenBackground {
+  position: absolute;
+}
+
+.whiteBall {
+  position: absolute;
+  top: 40%;
+}
+
+.winning-number-text {
+  color: white;
+  font-family: 'Jost';
+  font-size: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.game-status {
+  color: white;
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 10px;
+  left: 50%;
+  text-wrap: nowrap;
+  font-size: 26px;
+  background: linear-gradient(90deg, rgba(2, 154, 255, 0) 6.3%, #029AFF 40.46%, #029AFF 61.45%, rgba(2, 154, 255, 0) 100%);
+  width: 300px;
+  text-align: center;
+}
+
+.winNumberBack {
+  position: absolute;
+  bottom: 30px;
+  max-width: 275px;
+  max-height: 231px;
+  opacity: 60%;
 }

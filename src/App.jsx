@@ -17,11 +17,7 @@ function App() {
     }
     setIsLoading(false);
 
-
   }, []);
-  
- 
-
   if (isLoading) {
     return <Loader />;
   }
